@@ -20,34 +20,29 @@
         </section>
       </nav>
     </header>
-    <main class="main-transferir">
+    <main class="main-consignar">
       <section class="trans-volver">
         <a href="/usuario.html"><input type="button" value="Volver atrás" /></a>
       </section>
-      <section class="trans-logo">
-        <img src="./img/tranferir-removebg-preview.png" alt="" />
+      <section class="consignar-logo">
+        <img src="/img/condignar-removebg-preview.png" alt="">
       </section>
-      <section class="container-options">
-        <h1>Tranferencias</h1>
-        <section class="trans-left">
-          <input type="text" placeholder="Nombre de quién recibe">
-          <input type="number" placeholder="Numero de cuenta">
-          <select name="" id="">
-            <option value="">Banco</option>
-            <option value="">Bancolombia</option>
-            <option value="">BBVA</option>
-          </select>
-        </section>
-        <section class="trans-right">
-          <input type="email" placeholder="Email">
-          <select name="" id="">
-            <option value="">Tipo de cuenta</option>
-            <option value="">Ahorros</option>
-            <option value="">Corriente</option>
-          </select>
-          <input type="number" placeholder="Monto a transferir">
-        </section>
-        <input class="trans-din" type="submit" value="Transferir dinero">
+      <section class="container-consignar">
+        <h1>Consignar dinero</h1>
+        <input type="text" placeholder="Nombre de la cuenta">
+        <select name="" id="">
+          <option value="">Seleccione el tipo de cuenta</option>
+          <option value="">Ahorros</option>
+          <option value="">Corriente</option>
+        </select>
+        <select name="" id="">
+          <option value="">Forma de pago</option>
+          <option value="">Efectivo</option>
+          <option value="">Cheque</option>
+          <option value="">Consignación</option>
+        </select>
+        <input type="number" name="" id="" placeholder="Valor a consignar">
+        <input class="submit-consignar" type="submit" value="Realizar consignación">
       </section>
     </main>
     <footer>

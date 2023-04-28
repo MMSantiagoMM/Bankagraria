@@ -7,8 +7,9 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-image: url("/img/fondo.jpg");
+  /* background-image: url("/img/fondo.jpg"); */
   background-position: center;
+  background-color: #080802de;
 }
 
 header {
@@ -201,8 +202,10 @@ footer > .info {
 }
 .input-password {
   margin-top: 2rem;
-  width: 100%;
+  width: 63%;
   height: 5rem;
+  position: absolute;
+  bottom: 13.4rem;
 }
 .input-password::placeholder {
   color: #bab909;
@@ -577,7 +580,7 @@ footer > .info {
 }
 /*-------------------transferir-logo----------- */
 .trans-logo {
-    border: 1px solid black;
+
     width: 60%;
     height: 40%;
     position: absolute;
@@ -589,7 +592,6 @@ footer > .info {
 }
 /*---------------Opciones-transferir------------ */
 .container-options {
-    border: 1px solid red;
     width: 90%;
     height: 50%;
     position: relative;
@@ -602,7 +604,6 @@ footer > .info {
     color: rgb(80, 12, 12);
 }
 .container-options > .trans-left {
-    border:1px solid blue ;
     width: 48%;
     height: 70%;
     position: absolute;
@@ -610,16 +611,128 @@ footer > .info {
     left: 1rem;
 }
 .container-options > .trans-right {
-    border:1px solid blue ;
     width: 48%;
     height: 70%;
     position: absolute;
     top: 3rem;
     right: 1rem;
 }
-.container-options > input {
-    width: 50%;
-    height: 2rem;
+.container-options > .trans-din {
+    width: 75%;
+    height: 3rem;
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.6rem;
+    border-radius: 1rem;
+    background-color:rgba(80, 12, 12, 0.877);
+    color:white;
 }
+/*-------------Parte izquierda------- */
+.container-options > .trans-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.container-options > .trans-left > input {
+  width: 90%;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #b24f03e8;
+}
+.container-options > .trans-left > input::placeholder {
+  color: #000000;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.container-options > .trans-left > select {
+  width: 90%;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #b24f03e8;
+}
+/*---------------- Parte derecha-----------*/
+.container-options > .trans-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container-options > .trans-right > input {
+  width: 90%;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #b24f03e8;
+}
+.container-options > .trans-right > input::placeholder{
+  color: #000000;
+  text-align: center;
+  font-size: 1.7rem;
+}
+.container-options > .trans-right > select {
+  width: 90%;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #b24f03e8;
+}
+/*--------------Consignar saldo--------------*/
+.main-consignar {
+  width: 45%;
+  height: 48rem;
+  border-radius: 2rem;
+  background-color: #16964f7e;
+  position: relative;
+  top: 10rem;
+  left: 30rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+/*-------logo----------  */
+.consignar-logo {
+  position: absolute;
+  top: 7rem;
+  width: 40%;
+  height: 30%;
+}
+.consignar-logo > img {
+  width: 100%;
+  height: 100%;
+}
+ /*-------------container-consignar------  */
+.container-consignar {
+  width: 90%;
+  height: 50%;
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.container-consignar > input {
+  width: 90%;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #b09f0991;
+}
+.container-consignar > input::placeholder {
+  color: #000000;
+  font-size: 2rem;
+  text-align: center;
+}
+.container-consignar > select {
+  width: 90%;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #b09f099d;
+}
+.container-consignar > h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.container-consignar > .submit-consignar {
+  width: 35%;
+  font-size: 1.5rem;
+  background-color: #44441ab9;
+} 
